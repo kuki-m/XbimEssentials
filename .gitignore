@@ -200,3 +200,5 @@ FakesAssemblies/
 
 SharedFileVersionInfo.cs
 *.jfm
+/Tests/TestFiles/01_KKS_Unicode.ifc
+/Tests/TestFiles/02_ONKS_Unicode.ifc

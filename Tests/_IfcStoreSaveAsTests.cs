@@ -19,7 +19,7 @@ namespace Xbim.IO.Tests
         {
             IfcStore.ModelProviderFactory.UseHeuristicModelProvider();
 
-            var filePath = "TestFiles\\01_KKS_Unicode.ifc";
+            var filePath = "TestFiles\\02_ONKS_Unicode.ifc";
             var ifcFile = new FileInfo(filePath);
 
             using (var model = IfcStore.Open(filePath))

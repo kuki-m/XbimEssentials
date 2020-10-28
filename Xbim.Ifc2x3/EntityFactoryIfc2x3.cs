@@ -1221,6 +1221,9 @@ namespace Xbim.Ifc2x3
 				case 528: return new IfcZShapeProfileDef ( model, entityLabel, activated );
 				case 669: return new IfcZone ( model, entityLabel, activated );
 				default:
+#if DEBUG
+                    System.Diagnostics.Debug.WriteLine($"EntityFactoryIfc2x3@New(...) typeId={typeId}, entityLabel={entityLabel}");
+#endif
 					return null;
 			}
 		}

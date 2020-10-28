@@ -621,6 +621,12 @@ namespace Xbim.IO.Esent
                     var table = Model.GetTransactingCursor();
                     foreach (var instance in fromModel.Instances)
                     {
+#if DEBUG
+                        if (instance == null)
+                        {
+                            Debug.WriteLine($"instance is null.");
+                        }
+#endif
                         table.AddEntity(instance);
                         transaction.Pulse();
                     }
